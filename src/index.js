@@ -9,9 +9,6 @@ import {
 import "./index.css";
 import ProjectsEntry from './components/main/ProjectsEntry';
 import Error from './components/main/Error';
-import SingleProject, {
-  loader as projectLoader
-} from './components/main/SingleProject';
 
 const router = createBrowserRouter([
   {
