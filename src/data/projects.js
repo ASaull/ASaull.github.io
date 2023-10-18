@@ -314,8 +314,8 @@ export const projectsData = [
         using pure black is not a good idea, you should use a off-black, ideally tinted in the colour of other elements on the page.',
         future:
         'This is version 1.0 of this website, I have lots more ideas to expand it. Basically, the longer it takes me to get a job, the better this site\
-        will get (haha). If you\'re viewing version 1.0, then things are just getting started. Next up is making the display of images a bit better, especially on mobile, and\
-        adding the possibility of using video (though gifs seem to be working well).\n\
+        will get (haha). If you\'re viewing version 1.0, then things are just getting started. Next up is making the display of images a bit better, especially on mobile,\
+        adding the possibility of using video (though gifs seem to be working well), and adding dates onto projects.\n\
         I also need to brainstorm a better way to collapse the projects. As of right now, you have to scroll back up to collapse a project again. Ideally\
         the collapse button would move to the bottom of the section, but this doesn\'t really work with the current design on desktop though it would work\
         on mobile. Much to consider.'
