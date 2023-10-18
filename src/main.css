@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.main {
+  box-sizing: border-box;
+  background-color: #B33922;
+  color: #1A1814;
+  min-height: 100vh;
+  border-color: #69533D;
+  border-width: 1em;
+  border-style: solid;
+}
+
+#error {
+  text-align: center;
+  background-color: #B33922;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.errortext {
+  font-size: 700%;
+  margin-top: 20%;
+}
+
+.container {
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  flex-basis: 0%;
+}
+
+.left {
+  text-align: right;
+  margin-bottom: 1em;
+  flex-basis: 30%;
+  flex-grow: 0;
+  position: sticky;
+  top: 40%;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+.right {
+  margin-left: 15px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  width: 0;
+}
+
+.blankspace {
+  margin: 30%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  margin: 0;
+}
+
+p {
+  margin: 15;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.subtitle {
+  font-size: 32px;
+}
+
+.blurb {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.year {
+  font-size: 72px;
+}
+
+.image {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 15px;
+  border-color: #69533D;
+  border-width: 1em;
+  border-style: solid;
+}
+
+.project-div {
+  background-color: #B33922;
+  padding: 30px;
+  margin: 15px;
+  transition: all 200ms linear; 
+}
+
+.project-button {
+  opacity: 0%;
+  height: 100%;
+  background-color: #1A1814;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 100ms linear; 
+  backdrop-filter: blur(0)
+}
+
+.button-column {
+  flex-basis: 20%;
+  flex-grow: 0;
+}
+
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 400ms;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin: 30px 0px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+span.size-48 {
+  font-size: 48px;
+  font-variation-settings: 'OPSZ' 48;
+  transition: transform ease 400ms;
+}
+
+.project-content {
+  width: 100%;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #1A1814;
+  aspect-ratio : 16 / 9;
+}
+
+.each-slide-effect span {
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  background: #24242475;
+  color: white;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.nav:first-of-type {
+  left: 15px !important;
+}
+
+.nav:last-of-type {
+  right: 15px !important;
+}
+
+.default-nav {
+  background: #24242475 !important;
+  fill: white !important;
+}
+
+.default-nav:hover {
+  background: #4e4e4e75 !important;
+}
+
+.react-slideshow-container {
+  margin: 30px 0px;
+}
+
+/* For mobile. */
+/* Not necessarily a small screen! */
+@media (pointer:none), (pointer:coarse) {
+  .project-button {
+    opacity: 100%;
+    padding: 5px;
+  }
+}
+
+/* For desktop. */
+/* Not necessarily big screens! */
+@media (pointer:fine) {
+  .project-div:hover {
+    background-color: #f1e6e4;
+    filter: drop-shadow(15px 15px 0px black);
+  }
+
+  .project-div:hover .project-button {
+    opacity: 100%;
+  }
+
+  .project-button:hover {
+    background-color:#2e2a23;
+  }
+}
+
+/* For small widths */
+/* Not necesserily mobile! */
+@media only screen and (max-width: 1024px) {
+  .left {
+    flex-basis: 100%;
+    position: static;
+    margin-right: 0;
+  }
+
+  .right {
+    flex-basis: 40%;
+    flex-grow: 1;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .blankspace {
+    margin: 5%;
+  }
+
+  .project-div {
+    margin-left: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .project-button {
+    margin-top: 15px;
+  }
+
+  .each-slide-effect > div {
+    aspect-ratio : 1 / 1;
+  }
+}
