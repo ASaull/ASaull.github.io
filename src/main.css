@@ -110,9 +110,10 @@ li {
   display: block;
   margin-left: auto;
   margin-bottom: 15px;
-  border-color: #69533D;
+  border-radius: 50%;
+  /* border-color: #69533D;
   border-width: 1em;
-  border-style: solid;
+  border-style: solid; */
 }
 
 .project-div {
