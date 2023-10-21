@@ -80,7 +80,19 @@ export const projectsData = [
         'I learned a lot about writing code as part of a team in a way which can only be learned by doing. Knowing that my code would \
         be extended and built upon by my classmates made it very important that it was written well and well documented. I also learned\
         a lot about Agile practices and gained a practical understanding of the importance of things like burndown charts and planning\
-        poker.\nA big thing that I learned about myself was that it was very important for me to have a good overview of everything that\
+        poker.\n\
+        As my first large team project with Git, I learned a lot about its usage with several contributors. With a two-person team,\
+        working on a smaller project, you can generally just push to Main whenever you would like to. This is how we started \
+        our project and we quickly learned about what a disaster this would be. We then switched to doing our work on individual feature \
+        branches, pushing to them as necessary, and only once a feature was \
+        complete, would we create a Pull Request (PR) for it to be pulled into Main. We did designate one team member to approve PRs,\
+        but it turned into too big of a job, and so a few of us who knew the overall codebase well would meet before a given week\'s build \
+        was to be created and coordinate pulling in all of the team\'s outstanding PRs.\nAs a team, we also \
+        tracked our Agile tasks as issues in Git. This allowed us to see who was assigned which tasks, and be aware of when they  \
+        were being worked on.  This also meant that when a task was completed on someone\'s branch, it could be tagged as belonging\
+        to a PR. Once the PR was\
+        pulled into Main, the issues would be automatically marked as complete.\
+        \nA big thing that I learned about myself was that it was very important for me to have a good overview of everything that\
         was going on in the project. I\
         learned that if I knew what everyone was doing I felt much more involved in the project and much more confident when\
         speaking my ideas about how to proceed. I feel that this knowledge and comfort with the project resulted in me being a\
@@ -101,6 +113,7 @@ export const projectsData = [
         techs:
         [
             "Java",
+            "Javascript",
             "Spring Boot",
             "Websockets",
             "Test Driven Development"
@@ -133,7 +146,7 @@ export const projectsData = [
         When the class was introduced to Cucumber for acceptance tests it became incredibly clear to me how powerful such a tool could be. I ended up enjoying using it and\
         it is so satisfying to spend twenty seconds writing a new test in plain English, and then having that test immediately pass because of code previously written.\n\
         I also learned just how valuable it is to have tests in general. At one point during the project, I added a feature that broke something I had done earlier and caused some\
-        seemingly unrelated tests to no longer pass. Normally I wouldn\'t have never noticed this until much later, but seeing my tests fail immediately gave me the chance to fix\
+        seemingly unrelated tests to no longer pass. Normally I wouldn\'t have noticed this until much later, but seeing my tests fail immediately gave me the chance to fix\
         the new code, which was immediately indicated to be flawed.\n\
         Also, it is just so satisfying watching all those tests pass.',
         future:
@@ -246,14 +259,14 @@ export const projectsData = [
         dying significantly less than our randomly assigned teammates, and I realized that Riot (the creator of League of Legends) offers API keys to developers, and that\
         I could figure out the truth myself.\n\
         The script that I ended up creating accesses the API to load up the last 100 games played by me and my two friends and compiles several stats about these games,\
-        most notably the number of occurrences of n-death games. I then plotted this data on a histogram to reveal that yes, in fact, we were dying less than our teammates. Unforrunately\
+        most notably the number of occurrences of n-death games. I then plotted this data on a histogram to reveal that yes, in fact, we were dying less than our teammates. Unforunately\
         upon graphing some other data, it also revealed that we were getting fewer kills than our teammates as well. It turns out that we just have a less volatile playstyle.\n\
         I then ended up getting the script to give us a whole bunch of other data that we thought was interesting.',
         challenges:
         'This one wasn\'t too challenging. The most difficult part was wading through the incomplete API docs and reading responses to API requests to try and figure out what the\
         structure of the returned data looked like. Once I had that sorted, it was a simple pyplot adventure.',
         insights:
-        'Unfortunately, most of what I learned here was not about programming, but about my and my friends\' League of Legends habits.',
+        'Most of what I learned here was not about programming, but about my and my friends\' League of Legends habits.',
         future:
         'I have a lot of thoughts about where to take this project. I think that it would work really well as a website that anyone could use, although securing an API key from Riot for\
         large numbers of requests (the dev one is limited to 100/minute) would be difficult. I also had several other stats that I wanted to pull up. My friends and I don\'t play\
