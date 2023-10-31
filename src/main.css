@@ -116,6 +116,11 @@ li {
   border-style: solid; */
 }
 
+.githubIcon {
+  width: 48px;
+  padding-top: 15px;
+}
+
 .project-div {
   background-color: #B33922;
   padding: 30px;
