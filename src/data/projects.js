@@ -78,7 +78,7 @@ export const projectsData = [
         game.',
         insights:
         'I learned a lot about writing code as part of a team in a way which can only be learned by doing. Knowing that my code would \
-        be extended and built upon by my classmates made it very important that it was written well and well documented. I also learned\
+        be extended and built upon by my classmates made it very important that it was well written and well documented. I also learned\
         a lot about Agile practices and gained a practical understanding of the importance of things like burndown charts and planning\
         poker.\n\
         As my first large team project with Git, I learned a lot about its usage with several contributors. With a two-person team,\
@@ -132,7 +132,7 @@ export const projectsData = [
         as a black box. These tests would specify actions that players would take, turn by turn, and assert that outcomes were as expected. To create these\
         acceptance tests I used the software Cucumber which was fantastic and allowed tests to be written in plain text, while their actual code could be\
         hidden away at a lower level. This allowed the dozens of similar tests to be written very quickly.\nThese acceptance tests used Selenium to launch four instances of\
-        a browser, load into a four-player game, then act as the players, pressing buttons on the browser to fulfill actions. The underlying game server was then rigged to\
+        a browser, load into a four-player game, then act as the players, pressing buttons on the browser to perform actions. The underlying game server was then rigged to\
         to ensure players had the cards specified in the test, and the outcome was read off of the browser for all four players to ensure that everything had worked.',
         challenges:
         'The major challenge of this project was writing test-driven code. It is a different way of thinking when you are programming, and it makes certain things quite\
@@ -233,7 +233,10 @@ export const projectsData = [
         be caused by dual-booting Linux. Linux expects the motherboard to have time stored in UTC, while Windows expects it to be in local time. This means that when booting into\
         Windows after booting into Linux, the time displayed is four or five hours in the past.',
         insights:
-        'Honestly, I didn\'t learn too much from this one, it was just a little passion project.',
+        'The biggest thing that I learned from this project is to never underestimate a set of data\'s likelihood of being imperfect. When I started, I figured it would take a couple of hours\
+        to compile an answer, but it ended up taking several times longer than I had anticipated.\n\ If I were starting this project again, or if I decide to\
+        refactor it, my primary concern will be compartmentalizing the code so that reading the file results in completely sanitized data that will then be passed along for\
+        interpretation. This will allow my interpretation code to treat the data collection code as a black box, and assume that the data is perfectly correct.',
         future:
         'I recently uncovered the original log file, which is a single (very large!) text file for all logs up until a certain date in 2013. This is different from\
         the newer log files for which\
@@ -266,9 +269,10 @@ export const projectsData = [
         'This one wasn\'t too challenging. The most difficult part was wading through the incomplete API docs and reading responses to API requests to try and figure out what the\
         structure of the returned data looked like. Once I had that sorted, it was a simple pyplot adventure.',
         insights:
-        'Most of what I learned here was not about programming, but about my and my friends\' League of Legends habits.',
+        'For this project, I learned about interacting with a web API to gather data from a third party so that I could analyze it. It is a pretty straightforward process, but this gave\
+        me insight on how web APIs work in general, and how I would want to use them in the future.',
         future:
-        'I have a lot of thoughts about where to take this project. I think that it would work really well as a website that anyone could use, although securing an API key from Riot for\
+        'I have a lot of thoughts about where to take this project. I think that it would work well as a website that anyone could use, although securing an API key from Riot for\
         large numbers of requests (the dev one is limited to 100/minute) would be difficult. I also had several other stats that I wanted to pull up. My friends and I don\'t play\
         League of Legends anymore though, so this project is on hiatus.'
     },
@@ -290,12 +294,12 @@ export const projectsData = [
             {image: site_3, caption: 'This is easily extensible (I just added this image as "site_3"'},
         ],
         detailed_description:
-        'I hope someone reads this tbh, I put a lot of work into it. Basically, I realized that I had done a bunch of "slightly cool" things,\
+        'I hope someone reads this, to be honest, I put a lot of work into it. I realized that I had created a bunch of "slightly cool" projects\
         and there was certainly no room to put them on my resume, so I wanted to make a website that could be easily skimmed over without\
         feeling like you were obligated to read any or all of it. Therefore my goal was to make it easy to scan for relevant items, and then\
-        easy to just skim over the images associated with that item without needing to read all of the descriptions. Although I do outline\
+        easy to just skim over the images associated with that item without needing to read all of the description. Although I do outline\
         my thoughts on the projects for those who are interested.\n\
-        As for the creation of the website itself, I chose to do it in React because I had a tiny bit of experience with it from school.\
+        As for the creation of the website itself, I chose to do it in React because I had some experience with it from school.\
         After that, I looked for inspiration from Swiss-style typography to make a design. I have a great appreciation for graphic design\
         and typography, but with no training, and not much time put into it, I ended up going with a simple design that I borrowed from\
         a poster for the 1964 Tokyo Olympics.\n\
@@ -306,21 +310,21 @@ export const projectsData = [
         detect whether the user is using touch or pointer, to allow the buttons to show up without needing to be hovered if the user does\
         not have a mouse. This is separate from detecting if the screen is small to switch to mobile mode because tablets should use\
         the larger screen mode. I have a touchscreen laptop with a detachable keyboard and it switches modes perfectly when\
-        the keyboard is attached and detached.',
+        the keyboard is attached and detached!',
         challenges:
-        'Having never used React, or set up a website that is supposed to look good, and be used on multiple platforms this was a big\
+        'Having barely used React, or set up a website that is supposed to look good and be used on multiple platforms, this was a big\
         challenge for me. I had a lot of trouble coming up with a design that was simple, but extensible. I wanted to have a single\
         page design to keep things simple and aesthetic, but I needed a way to keep some information hidden, so I came up with\
         the idea of expanding and contracting projects.\n\
         It was also a big challenge just getting started in React. When you are working on a school project there is always a very specific order\
-        to do things and you can be certain that a solution exists. For my open-ended problem it took me a while to even decide how to start and\
+        to do things and you can be certain that a solution exists. For my open-ended problem, it took me a while to even decide how to start and\
         what to do. I found it difficult to know what the standards even were and if I was following them.',
         insights:
-        'I learned almost everything from scratch for this website, so if you see it here, then it\'s probably something I learned. Mostly I learned about how\
+        'I learned almost everything from scratch for this website, so if you see it here, then it\'s something I learned. Mostly I learned about how\
         React works, and how it uses JSX to generate elements. I of course learned a lot about CSS styling and how to line things up nicely on a page.\
         I learned about mobile vs web, and how to lay things out so that it works on both. I also learned about how navigation is supposed to work for\
-        a modern React webpage. Ideally, my website would go to a new URL, say ".../projects/1" when you expand a project, allowing you to use the back button to\
-        collapse said project, but I found that based on my current\
+        a modern React webpage. Ideally, when you expand a project, my website would route a new URL, say ".../projects/1", allowing you to use the back button to\
+        collapse said project. However, I found that based on my current\
         implementation this was almost impossible. If I were to make this website again I would probably choose a design that made it easier to\
         do things the default "React way". On the other hand, not knowing makes for a more unique design, though in theory, it will be harder to\
         navigate for someone used to typical web pages.\n\
@@ -363,17 +367,18 @@ export const projectsData = [
         using synthesized pianos. It was also a challenging and exhaustive process learning about and adjusting all the parameters of the\
         network to ultimately achieve a high rate of correct classification.',
         insights:
-        'This was a fairly simple neural network project, but it gave nice results and gave me a lot of familiarity with\
-        the tools and methods required in AI and was very useful as a backbone for later courses.',
+        'Though it was a fairly simple neural network project, it was my introduction to classifying data with a neural network so I learned\
+        a lot about what goes into getting nice results and I gained a lot of familiarity with\
+        the tools and methods required in AI. The project was very useful as a backbone for later courses.',
         future:
         "Ultimately the classifier was not tested on real data, and this is something that I regret not having time for. The next steps for\
-        the project would need to see it being able to classify real recordings of chords. I would be interested to see if the\
+        the project would need to see it being able to classify real recordings of chords. I would be especially interested in seeing if the\
         model, which was trained on synthetic data, would be able to classify real data (I suspect it would)."
     },
     {
         id: "7",
         title: "Cities: Skylines Assets",
-        description: "A collection of 3D modelled building assets that I created for the game Cities: Skylines",
+        description: "A collection of 3D modeled building assets that I created for the game Cities: Skylines",
         techs:
         [
             "Blender",
@@ -392,13 +397,13 @@ export const projectsData = [
         ever created. It has an expansive library of user-created buildings which can be subscribed to on Steam. As I was building\
         a Japanese-themed city at the time, I noticed that this particular phenotype of setback buildings was present in real Japanese\
         cities, but missing from the existing library of custom buildings. I therefore took it upon myself to create some.\n\
-        I started with a few simple buildings and moved on to bigger projects.\n\This is only tangentially\
+        I started with a few simple buildings and moved on to bigger projects.\n\ This is only tangentially\
         related to software development, but I think it\'s cool.\n\
-        I am proud to say that these assets have each been downloaded around 10 000 times and are some of the most popular assets for\
+        I am proud to say that these assets have each been downloaded around 10,000 times and are some of the most popular assets for\
         creating a Japanese-style city! Every time I see someone post a screenshot of their Japanese build I look out for my buildings\
         and I can usually spot them.',
         challenges:
-        'I was already familiar with the 3D modelling tool Blender before this project, but making a building for use in a game alongside 100s of\
+        'I was already familiar with the 3D modeling tool Blender before this project, but making a building for use in a game alongside 100s of\
         other models requires a degree of responsibility. I had to start by downloading and analyzing my peers\' models so that I knew about\
         what the standards were for vertex count and texture size. Besides creating a simple coloured diffuse texture for the building, there\
         are also several other textures that have to be created. There are textures for roughness, normals (bumps), illumination of windows at\
