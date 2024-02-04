@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87236151.css",
-    "main.js": "/static/js/main.f63a7573.js",
+    "main.js": "/static/js/main.113232a0.js",
     "static/js/787.e734f763.chunk.js": "/static/js/787.e734f763.chunk.js",
     "static/media/buildings_4.png": "/static/media/buildings_4.c3f4298d433989a4017a.png",
     "static/media/buildings_5.png": "/static/media/buildings_5.7cc4e67b83dc235b68e1.png",
@@ -30,6 +30,7 @@
     "static/media/site_2.jpg": "/static/media/site_2.d2fe40237bc9545da89e.jpg",
     "static/media/mc_2.png": "/static/media/mc_2.fede9ffb92de677dbd45.png",
     "static/media/site_3.png": "/static/media/site_3.7b51b94c68d71e3010c7.png",
+    "static/media/break_6.png": "/static/media/break_6.a25d518fb69dfe8a7d8b.png",
     "static/media/crazy_2.png": "/static/media/crazy_2.2b91ca496afdff9abc3b.png",
     "static/media/chord_3.png": "/static/media/chord_3.233e7541a7d3ed981aec.png",
     "static/media/chord_1.png": "/static/media/chord_1.244a17e335a3926133ea.png",
@@ -41,11 +42,11 @@
     "static/media/github-mark.svg": "/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/index.html",
     "main.87236151.css.map": "/static/css/main.87236151.css.map",
-    "main.f63a7573.js.map": "/static/js/main.f63a7573.js.map",
+    "main.113232a0.js.map": "/static/js/main.113232a0.js.map",
     "787.e734f763.chunk.js.map": "/static/js/787.e734f763.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87236151.css",
-    "static/js/main.f63a7573.js"
+    "static/js/main.113232a0.js"
   ]
 }
