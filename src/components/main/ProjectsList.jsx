@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import ProjectButton from "../reusable/ProjectButton";
-import Slideshow from "../reusable/Slideshow";
 
 
 const ProjectsList = () => {

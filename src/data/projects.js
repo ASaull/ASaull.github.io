@@ -3,6 +3,7 @@ import break_2 from '../components/images/break_2.png'
 import break_3 from '../components/images/break_3.png'
 import break_4 from '../components/images/break_4.png'
 import break_5 from '../components/images/break_5.png'
+import break_6 from '../components/images/break_6.png'
 
 import chord_1 from '../components/images/chord_1.png'
 import chord_2 from '../components/images/chord_2.png'
@@ -14,7 +15,6 @@ import crazy_2 from '../components/images/crazy_2.png'
 import crazy_3 from '../components/images/crazy_3.png'
 import crazy_4 from '../components/images/crazy_4.png'
 import crazy_5 from '../components/images/crazy_5.png'
-
 
 import mc_1 from '../components/images/mc_1.png'
 import mc_2 from '../components/images/mc_2.png'
@@ -41,8 +41,86 @@ import buildings_3 from '../components/images/buildings_3.png'
 import buildings_4 from '../components/images/buildings_4.png'
 import buildings_5 from '../components/images/buildings_5.png'
 
+import mcbde_1 from '../components/images/mcbde_1.png'
+import mcbde_2 from '../components/images/mcbde_2.png'
+import mcbde_3 from '../components/images/mcbde_3.png'
+import mcbde_4 from '../components/images/mcbde_4.png'
+
 
 export const projectsData = [
+    {
+        id: "8",
+        title: 'Minecraft Block Display Exporter',
+        description: 'A Blender add-on that generates commands to create Minecraft Block Display Entities.',
+        techs:
+        [
+            "Python",
+            "Blender"
+        ],
+        images:
+        [
+            {image: mcbde_1, caption: "My test dummy as seen in Blender. The currently selected Oak Stairs have their options shown to the user"},
+            {image: mcbde_2, caption: "My test dummy as displayed in Minecraft by the generated command"},
+            {image: mcbde_3, caption: "An example of block type autocomplete"},
+            {image: mcbde_4, caption: "An example of block property autocomplete"},
+        ],
+        detailed_description:
+        'Simply put, this Blender add-on allows the user to create anything they want as long as it is built with Minecraft blocks,\
+        then import it into Minecraft. These blocks may have arbitrary scale, rotation, and transformation, rather than being\
+        constrained to a grid as Minecraft blocks typically are.\n\
+        Less simply put, A Minecraft Block Display Entity is a block, or several blocks, which are displayed in-game by way of a command. They are \
+        non-interactable, and each block can be rotated, scaled, and transformed according to a 4x4 transformation matrix. This makes \
+        the commands extremely difficult to create by hand. Therefore someone has created a browser-based tool for generating these commands, but \
+        I have found that it has several drawbacks relating to my use-case. My first plan was to fork the project and customize it for myself,\
+        However the project\'s source code is not public and it may be abandoned.\n\
+        Therefore I decided to re-create aspects of the project as a Blender add-on which will allow for more extensibility and complexity\
+        supported by Blender\'s existing functions and library of other add-ons, as well as open-sourcing my project to ensure\
+        continued maintenance and availability.',
+        challenges:
+        'This has been a very fun project with several major challenges. First off, Blender and Minecraft do not share the same coordinate system.\
+        Because Blender originated as a tool for creating art, it places the x/y plane horizontally on the ground, with z representing height above\
+        this plane. However, Minecraft, like most video games, takes the x/y plane to be vertical in the world, with z representing "depth".\
+        This meant that a significant problem I faced was converting the 4D transformation matrix that Blender gives for objects to the transformation\
+        matrix that Minecraft expects for blocks. This problem also reemerges every time anything has to be converted such as rotations or even UV\
+        mapping.\n\
+        My next and biggest challenge was displaying the Minecraft blocks accurately inside Blender. As far as I know, it is not legal to distribute\
+        Minecraft\'s block texture and model data as part of software, and I think this may be why the existing web-based tool cannot be made\
+        open-source. Therefore the first step for displaying a Minecraft block is to have the user link the add-on to the location of their\
+        Minecraft installation, from which the add-on can extract the model and texture data for blocks. At this point, we deal with Minecraft\'s\
+        somewhat unique way of defining block models. Blocks are represented in JSON format with several properties describing how cubes will be\
+        transformed to make up the more complex shapes in Minecraft, such as stairs, or a piston. Reverse engineering the method that Minecraft uses\
+        to parse these JSON files has been the biggest part of the project, and is still ongoing for some cases.\
+        The final challenge which I will elucidate is the continuous challenge of dealing with software in which I am not sure if a solution\
+        ever actually exists. You get used to writing code at university where the assignment has already been completed by last year\'s class,\
+        by the TAs, or the Professor. You can be sure that there is a reasonable solution that can be found within the allotted time period for\
+        the assignment. Blender Python is not a particularly widely used API, nor does it have stellar documentation so I was constantly wondering\
+        if what I was doing was correct stylistically, or even possible at all. I spend lots of time looking over other Blender Add-ons and even\
+        through the Blender source code when the docs were not adequate. ',
+        insights:
+        'ChatGPT rant incoming, skip to the end of this section for a TLDR.\n\
+        This is the first project I have worked on for which I decided to actively use ChatGPT to aid me. This has been insightful, to say the least,\
+        since I am pretty sure that things would have gone a lot faster had I not used it in the first place. The learning experience that has taken\
+        place for my journey with ChatGPT is that it has a very specific niche in which it is useful, and trying to get it to do other things will\
+        waste more time than it will save.\n\
+        I have a lot to say about how useless ChatGPT is, and maybe Github Copilot is less stupid, but as the project advanced I became more and more\
+        pleased with the answers that real humans give on the internet. ChatGPT will hallucinate all sorts of things such as methods and properties of\
+        objects in libraries that do not exist. If you tell it "I want to make a ball red" it will give you the code Ball.setRed(), even though that\
+        method has never existed in the history of the library. If you call it out it will apologize for being wrong, and state confidently that in fact the\
+        correct code is setRed(Ball), even though this function has also never existed. It will never admit that it doesn\'t know something. It also gives\
+        completely ridiculous solutions to simple problems, importing several (very large!) Python libraries to perform a matrix transformation that I know\
+        (and told it) can be simply accomplished by swapping values in the matrix with each other. \n\
+        OK, so when is it useful? Well it does happen to be useful when it can do something for which the standard is already well-established and\
+        well-documented. It is good at doing things that require no decision-making or problem-solving, especially when the solution\'s correctness\
+        is easily verified. For example, it wrote the bones of my script parsing JSON files which were archived in a jar file. This is something which\
+        I can easily do, but getting ChatGPT to do it is faster, and it can adapt the typical use-case to fit my use-case.\n\
+        TLDR: ChatGPT was mostly useful in this project insofar as I learned when not to use it (which is most of the time, but not all of the time).',
+        future:
+        'This project is not yet complete. I believe that I am quite close to an initial release, which will be functionally equivalent to the existing tool\
+        only for the creation and manipulation of Minecraft blocks. There are, however, several other functions of Minecraft Block Displays, such as the\
+        ability to render items and text which I have not begun implementing yet.\n\
+        My goal for releasing this software is for it to become popular enough that I can experience being an open-source maintainer and learn about\
+        what that entails.'
+    },
     {
         id: "0",
         title: '"Breakthrough" Game',
@@ -59,6 +137,7 @@ export const projectsData = [
             {image: break_1, caption: "Creating robots, and turning them green"},
             {image: break_2, caption: "Hovering over a laser turret while it fires"},
             {image: break_3, caption: "Hovering over a robot as it gets hit by a rocket turret"},
+            {image: break_6, caption: "An example of issues that I completed during Sprint 4. Including an associated PR."},
             {image: break_4, caption: "Winning a level!"},
             {image: break_5, caption: "We gave them names to keep you invested"},
         ],
@@ -404,7 +483,7 @@ export const projectsData = [
         and I can usually spot them.',
         challenges:
         'I was already familiar with the 3D modeling tool Blender before this project, but making a building for use in a game alongside 100s of\
-        other models requires a degree of responsibility. I had to start by downloading and analyzing my peers\' models so that I knew about\
+        other models require a degree of responsibility. I had to start by downloading and analyzing my peers\' models so that I knew about\
         what the standards were for vertex count and texture size. Besides creating a simple coloured diffuse texture for the building, there\
         are also several other textures that have to be created. There are textures for roughness, normals (bumps), illumination of windows at\
         night, and masking which areas of the building will be coloured to create variations. Then once you\'ve done all that, you have to do it\
@@ -414,7 +493,9 @@ export const projectsData = [
         some silly 3D art that I will use as a wallpaper or something. There were established community standards that I had to follow and when my\
         assets had a bug then I had to be active in the comments section to find and fix it.',
         future:
-        'I am still very interested in creating buildings for Cities: Skylines, but the sequel was announced a while ago, and so I have been\
-        waiting for its release to, first of all, update these buildings for the new game, and then create new ones.'
+        'I am still very interested in creating buildings for Cities: Skylines games and the sequel, Cities:Skylines II, was released in October 2023.\
+        I was originally planning to update all of my assets for this new game, however, it does not yet include an asset editor, much to the continued\
+        disappointment of myself and the rest of the community. Once this asset editor is released I will certainly be resuming asset development, but\
+        until then, I don\'t have much motivation to create assets for a game which I hope will eventually be surpassed in every way by its sequel.'
     },
 ]

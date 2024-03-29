@@ -1,7 +1,6 @@
 import SingleProject from "../main/SingleProject";
 import React, { useState } from "react";
 import { useRef } from "react";
-import Slideshow from "./Slideshow";
 
 function ProjectButton({ title, description, techs, id}) {
     const contentRef = useRef();
