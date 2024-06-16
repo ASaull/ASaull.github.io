@@ -34,6 +34,8 @@ import site_1 from '../components/images/site_1.png'
 import site_2 from '../components/images/site_2.jpg'
 import site_3 from '../components/images/site_3.png'
 import site_4 from '../components/images/site_4.webp'
+import site_5 from '../components/images/site_5.png'
+import site_6 from '../components/images/site_6.jpg'
 
 import buildings_1 from '../components/images/buildings_1.png'
 import buildings_2 from '../components/images/buildings_2.png'
@@ -50,7 +52,7 @@ import mcbde_4 from '../components/images/mcbde_4.png'
 export const projectsData = [
     {
         id: "8",
-        title: 'Minecraft Block Display Exporter',
+        title: 'Blender "Minecraft Block Display" Add-on',
         description: 'A Blender add-on that generates commands to create Minecraft Block Display Entities.',
         techs:
         [
@@ -87,10 +89,10 @@ export const projectsData = [
         Minecraft\'s block texture and model data as part of software, and I think this may be why the existing web-based tool cannot be made\
         open-source. Therefore the first step for displaying a Minecraft block is to have the user link the add-on to the location of their\
         Minecraft installation, from which the add-on can extract the model and texture data for blocks. At this point, we deal with Minecraft\'s\
-        somewhat unique way of defining block models. Blocks are represented in JSON format with several properties describing how cubes will be\
-        transformed to make up the more complex shapes in Minecraft, such as stairs, or a piston. Reverse engineering the method that Minecraft uses\
-        to parse these JSON files has been the biggest part of the project, and is still ongoing for some cases.\
-        The final challenge which I will elucidate is the continuous challenge of dealing with software in which I am not sure if a solution\
+        somewhat unique way of defining block models. Blocks are represented in JSON format as a composition of several transformed cubes \
+        which to make up the more complex shapes in Minecraft, such as stairs or a piston. Reverse engineering the method that Minecraft uses\
+        to parse these JSON files has been the biggest part of the project.\n\
+        The final challenge which I will mention is the continuous challenge of dealing with software in which I am not sure if a solution\
         ever actually exists. You get used to writing code at university where the assignment has already been completed by last year\'s class,\
         by the TAs, or the Professor. You can be sure that there is a reasonable solution that can be found within the allotted time period for\
         the assignment. Blender Python is not a particularly widely used API, nor does it have stellar documentation so I was constantly wondering\
@@ -115,7 +117,8 @@ export const projectsData = [
         I can easily do, but getting ChatGPT to do it is faster, and it can adapt the typical use-case to fit my use-case.\n\
         TLDR: ChatGPT was mostly useful in this project insofar as I learned when not to use it (which is most of the time, but not all of the time).',
         future:
-        'This project is not yet complete. I believe that I am quite close to an initial release, which will be functionally equivalent to the existing tool\
+        'This project has reached an inital milestone where it can render and export all basic Minecraft blocks. Therefore I am\
+        quite close to an initial release, which will be functionally equivalent to the existing tool\
         only for the creation and manipulation of Minecraft blocks. There are, however, several other functions of Minecraft Block Displays, such as the\
         ability to render items and text which I have not begun implementing yet.\n\
         My goal for releasing this software is for it to become popular enough that I can experience being an open-source maintainer and learn about\
@@ -123,7 +126,7 @@ export const projectsData = [
     },
     {
         id: "0",
-        title: '"Breakthrough" Game',
+        title: 'Reverse Tower Defence Game "Breakthrough"',
         description: 'A "reverse tower defence" game created by a team following agile practices.',
         techs:
         [
@@ -188,7 +191,7 @@ export const projectsData = [
     {
         id: "2",
         title: 'Test Driven Crazy Eights',
-        description: 'Creating multiplayer web-based Crazy Eights using test driven development. All code written was preceded by writing a test.',
+        description: 'A multiplayer web-based Crazy Eights game using test driven development. All code written was preceded by writing a test.',
         techs:
         [
             "Java",
@@ -367,9 +370,11 @@ export const projectsData = [
         ],
         images:
         [
-            {image: site_4, caption: 'This poster was one source of inspiration for the site'},
-            {image: site_1, caption: "If you're viewing this site on mobile, this is what it looks like on desktop"},
-            {image: site_2, caption: "If you're viewing this site on desktop, this is what it looks like on mobile"},
+            {image: site_4, caption: 'This poster was one source of inspiration for the original design of the site'},
+            {image: site_1, caption: "Original brutalist design on desktop"},
+            {image: site_2, caption: "Original brutalist design on mobile"},
+            {image: site_5, caption: "Current neumorphic design on desktop"},
+            {image: site_6, caption: "Current neumorphic design on mobile"},
             {image: site_3, caption: 'This is easily extensible (I just added this image as "site_3"'},
         ],
         detailed_description:
@@ -411,8 +416,7 @@ export const projectsData = [
         a great explainer of what makes a design good or bad and I went through changing everything so that I removed the bad parts. For example,\
         using pure black is not a good idea, you should use an off-black, ideally tinted in the colour of other elements on the page.',
         future:
-        'This is version 1.0 of this website; I have lots more ideas to expand it. Basically, the longer it takes me to get a job, the better this site\
-        will get (haha). If you\'re viewing version 1.0, then things are just getting started. Next up is making the display of images a bit better, especially on mobile,\
+        'This is version 1.1 of this website; I have lots more ideas to expand it. Next up is making the display of images a bit better, especially on mobile,\
         adding the possibility of using video (though gifs seem to be working well), and adding dates onto projects.\n\
         I also need to brainstorm a better way to collapse the projects. As of right now, you have to scroll back up to collapse a project again. Ideally\
         the collapse button would move to the bottom of the section, but this doesn\'t really work with the current design on desktop, though it would work\
