@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4d4aa67.css",
-    "main.js": "/static/js/main.76bf0ad4.js",
-    "static/js/453.97a244af.chunk.js": "/static/js/453.97a244af.chunk.js",
+    "main.css": "/static/css/main.3bb18369.css",
+    "main.js": "/static/js/main.881b8ede.js",
+    "static/js/787.e734f763.chunk.js": "/static/js/787.e734f763.chunk.js",
     "static/media/buildings_4.png": "/static/media/buildings_4.c3f4298d433989a4017a.png",
     "static/media/buildings_5.png": "/static/media/buildings_5.7cc4e67b83dc235b68e1.png",
     "static/media/buildings_1.png": "/static/media/buildings_1.68a867d0048d34362dc8.png",
@@ -10,6 +10,7 @@
     "static/media/buildings_3.png": "/static/media/buildings_3.9da748b4e1a7d3d4e767.png",
     "static/media/mcbde_2.png": "/static/media/mcbde_2.8b2ff832d26204d89057.png",
     "static/media/site_1.png": "/static/media/site_1.da7ec172070ff2d3262f.png",
+    "static/media/site_5.png": "/static/media/site_5.b4325a26c5bdd0e704b4.png",
     "static/media/console_7.jpg": "/static/media/console_7.2b3eb30129467c7d7fd2.jpg",
     "static/media/crazy_1.png": "/static/media/crazy_1.8defd6d7ce98f837c6b4.png",
     "static/media/console_6.jpg": "/static/media/console_6.90ded6cbf319a0b38f93.jpg",
@@ -30,6 +31,7 @@
     "static/media/chord_4.png": "/static/media/chord_4.81eb3b41ed05caa26c3d.png",
     "static/media/site_4.webp": "/static/media/site_4.768a7cab88f5ea4fa282.webp",
     "static/media/site_2.jpg": "/static/media/site_2.d2fe40237bc9545da89e.jpg",
+    "static/media/site_6.jpg": "/static/media/site_6.6b4b730befe6465244b8.jpg",
     "static/media/mc_2.png": "/static/media/mc_2.fede9ffb92de677dbd45.png",
     "static/media/site_3.png": "/static/media/site_3.7b51b94c68d71e3010c7.png",
     "static/media/break_6.png": "/static/media/break_6.a25d518fb69dfe8a7d8b.png",
@@ -43,14 +45,14 @@
     "static/media/league_2.png": "/static/media/league_2.4268439bb37d144b1683.png",
     "static/media/crazy_5.png": "/static/media/crazy_5.77e0e2c6d6b2c8365230.png",
     "static/media/league_1.png": "/static/media/league_1.626a833a468f4390aec2.png",
-    "static/media/github-mark.svg": "/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
-    "main.a4d4aa67.css.map": "/static/css/main.a4d4aa67.css.map",
-    "main.76bf0ad4.js.map": "/static/js/main.76bf0ad4.js.map",
-    "453.97a244af.chunk.js.map": "/static/js/453.97a244af.chunk.js.map"
+    "main.3bb18369.css.map": "/static/css/main.3bb18369.css.map",
+    "main.881b8ede.js.map": "/static/js/main.881b8ede.js.map",
+    "787.e734f763.chunk.js.map": "/static/js/787.e734f763.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4d4aa67.css",
-    "static/js/main.76bf0ad4.js"
+    "static/css/main.3bb18369.css",
+    "static/js/main.881b8ede.js"
   ]
 }
