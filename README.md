@@ -1,9 +1,12 @@
 # A Website for Aidan Saull!
 
-### Set up after downloading repository
+### Set up after downloading the repository
 
-Simply run
-`npm install'
-to download all required dependencies and then
-'npm start'
-to run the webpage locally.
+Change directory into the repository.
+
+To download all required dependencies execute
+`npm install`.
+
+Then to run the webpage locally execute
+`npm start`,
+and the webpage can be previewed at localhost:3000.
