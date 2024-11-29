@@ -16,4 +16,4 @@ and the webpage can be previewed at localhost:3000.
 Change directory into the repository.
 
 Execute
-`npm run deploy`
+`npm run deploy`.
