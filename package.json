@@ -4,15 +4,16 @@
   "homepage": "https://ASaull.github.io/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
     "react-scripts": "^5.0.1",
-    "react-slideshow-image": "^4.2.1",
-    "web-vitals": "^2.1.4"
+    "react-slideshow-image": "^4.3.1",
+    "web-vitals": "^4.2.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -41,10 +42,16 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@eslint/js": "^9.7.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.4",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.8.0",
+    "typescript-eslint": "^7.16.0"
   }
 }
